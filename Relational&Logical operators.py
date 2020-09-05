@@ -1,0 +1,29 @@
+"Relational/ comparison operators: <, >, <=, >=, =="
+"Logical operator: and, or, not"
+
+'Exercise 1:'
+name = "NA"
+is_named = input("Do you want to create your username (Y/N))? ")
+if is_named.upper() == "Y":
+    name = input("What's your name? ")
+    if len(name) < 3:
+        print("Your name must be at least 3 characters")
+    elif len(name) > 50:
+        print("Your name must not be over 50 characters ")
+    else:
+        print(f"Hi! {name}")
+elif is_named.upper() == "N":
+    print("Ok! See ya later!")
+else:
+    print("Invalid input!")
+
+'Exercise 2:'
+weight = float(input("Enter your weight: "))
+unit = input("(L)bs or (K)g: ").upper()
+while unit != "L" and unit !="K":
+    print("Invalid choice! Enter again (L or K)!")
+    unit = input("(L)bs or (K)g: ").upper()
+if unit == "L":
+    print("Your Kg is", weight * 0.45)
+else:
+    print("Your Lbs is:", weight / 0.45)
