@@ -27,3 +27,35 @@ if unit == "L":
     print("Your Kg is", weight * 0.45)
 else:
     print("Your Lbs is:", weight / 0.45)
+
+'Exercise 3:'
+
+is_running = True
+is_start = False
+is_stop = False
+while is_running:
+    prompt = input("> ").lower()
+    if prompt == "help":
+        print('''
+start - to start the run
+stop - to stop the car
+exit - to exit the game''')
+    elif prompt == "start":
+        if is_start:
+            print("Car is already started!")
+            is_stop = False
+        else:
+            print("Car is ready to race!")
+        is_start = True
+    elif prompt == "stop":
+        if is_stop:
+            print("car is already stopped!")
+            is_start = False
+        else:
+            print("car is stopped!")
+        is_stop = True
+    elif prompt == "exit":
+        is_running = False
+    else:
+        print("Invalid choice! Enter your option again!")
+print("See ya in the next game!")
