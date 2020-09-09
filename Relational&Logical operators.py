@@ -32,7 +32,7 @@ else:
 
 is_running = True
 is_start = False
-is_stop = False
+
 while is_running:
     prompt = input("> ").lower()
     if prompt == "help":
@@ -43,17 +43,16 @@ exit - to exit the game''')
     elif prompt == "start":
         if is_start:
             print("Car is already started!")
-            is_stop = False
         else:
             print("Car is ready to race!")
         is_start = True
     elif prompt == "stop":
-        if is_stop:
+        if not is_start:
             print("car is already stopped!")
-            is_start = False
+
         else:
             print("car is stopped!")
-        is_stop = True
+            is_start = False
     elif prompt == "exit":
         is_running = False
     else:
