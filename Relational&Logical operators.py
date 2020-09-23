@@ -31,7 +31,7 @@ else:
 'Exercise 3:'
 
 is_running = True
-is_start = False
+is_stop = False
 
 while is_running:
     prompt = input("> ").lower()
@@ -41,20 +41,22 @@ start - to start the run
 stop - to stop the car
 exit - to exit the game''')
     elif prompt == "start":
-        if is_start:
+        if is_stop:
             print("Car is already started!")
         else:
             print("Car is ready to race!")
-        is_start = True
+        is_stop = True
     elif prompt == "stop":
-        if not is_start:
+        if not is_stop:
             print("car is already stopped!")
 
         else:
             print("car is stopped!")
-            is_start = False
+            is_stop = False
     elif prompt == "exit":
         is_running = False
     else:
         print("Invalid choice! Enter your option again!")
-print("See ya in the next game!")
+goodbye = "See ya in the next game!"
+if ("See ya" in goodbye):
+    print(goodbye)
