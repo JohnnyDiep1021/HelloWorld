@@ -49,7 +49,7 @@ print(list_with2D)
 list_withitem =[0,1,3,4,1,6,1,2,5,9,5,2,5,2,7,1,4]
 print(list_withitem.sort())
 list_withitem.reverse()
-list_withitem2 = [0,1,3,4,1,6,1,2,5,9,5,2,5,2,7,1,4,1,4,2,5,4,5,6,1,2,3,4,5,8]
+list_withitem2 = list_withitem.copy()
 'none is an object in Python showing the absence of value'
 'pop() remove the last item in the list'
 list_withitem.pop()
