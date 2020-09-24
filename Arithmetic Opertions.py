@@ -17,7 +17,7 @@ exponent = 3**2
 exponent **= num1
 
 'division with single slash (/) for getting float result '
-'and double slash (//) for getting the integer result (whole number) without rounding off'
+'and double slash (//) for getting the integer result (whole number) without rounding up'
 
 'operators: +, -, *, /, //, %, ** (exp)'
 
