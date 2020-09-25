@@ -4,7 +4,7 @@ class Vector:
     # Constructor, to initialize/ create an object
     # Self is a reference to a current object
 
-    def  __init__(self, x, y):
+    def __init__(self, x, y):
         self.x = x
         self.y = y
 
