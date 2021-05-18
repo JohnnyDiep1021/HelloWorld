@@ -10,12 +10,19 @@ def get_spreadsheet(filename, name_of_sheet):
     # It is case sensitive
 
     # two method to get data from the cell in spreadsheet
-    cell = sheet['a1']
-    cell = sheet.cell(1,1)
+    cell = sheet['A1']
+    cell2 = sheet['b1']
+    cell3 = sheet['C1']
+    # cell = sheet.cell(1,1)
 
     # .value to get the value in the spreadsheet
-    print(cell.value)
-
+    print('*'*53)
+    print('EXCEL INFOR'.center(53))
+    print('*'*53)
+    print(str(cell.value).ljust(20),str(cell2.value).ljust(20),str(cell3.value).rjust(10))
+    # print(cell2.value)
+    # print(cell3.value)
+    print('*'*53)
     # the number of rows in spreadsheet
     for row in range(2, sheet.max_row + 1):
         data = sheet.cell(row, 3) # (row, column)

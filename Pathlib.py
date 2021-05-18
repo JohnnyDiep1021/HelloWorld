@@ -7,7 +7,7 @@ path = Path("ecommerce")
 print(path.exists())
 
 # rmdir(), mkdir() remove and make new directories
-path2 = Path("eemails")
+path2 = Path("emails")
 print(path2.rmdir())
 print(path2.mkdir())
 
